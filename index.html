@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plano X - Mentoria Secreta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0a0a;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header {
+  background: #0a0a0a;
+  padding: 20px 0;
+  border-bottom: 2px solid #ff5f00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #ff5f00;
+}
+
+.btn-nav {
+  background: #ff5f00;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.hero {
+  background: linear-gradient(135deg, #ff5f00, #ff3c00);
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero span {
+  color: #000;
+}
+
+.btn-cta {
+  background: #000;
+  color: #fff;
+  padding: 15px 30px;
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.btn-cta:hover {
+  background: #222;
+}
+
+.sobre ul {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.sobre ul li {
+  margin: 10px 0;
+  border-left: 3px solid #ff5f00;
+  padding-left: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  transition: 0.3s;
+}
+
+.card:hover {
+  border-color: #ff5f00;
+}
+
+.feedback-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.feedback-grid img {
+  width: 280px;
+  border-radius: 10px;
+  border: 2px solid #ff5f00;
+}
+
+.checkout {
+  background: #111;
+  text-align: center;
+}
+
+.checkout .preco {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.de {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.por {
+  color: #ff5f00;
+  font-weight: bold;
+}
+
+.urgencia {
+  font-size: 1rem;
+  color: #ff9f66;
+  margin-bottom: 20px;
+}
+
+.btn-checkout {
+  background: #ff5f00;
+  color: #000;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-checkout:hover {
+  background: #ff3c00;
+}
+
+.footer {
+  background: #0a0a0a;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .btn-checkout, .btn-cta {
+    width: 100%;
+    display: block;
+  }
+}
+
+    </style>
+<body>
+  <header class="header">
+    <div class="container">
+      <img src="logo.png" alt="Logo" class="logo"/>
+      <nav class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#conteudo">Conteúdo</a>
+        <a href="#feedbacks">Feedbacks</a>
+        <a href="#checkout" class="btn-nav">Comprar</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Mentoria <span>Plano X</span></h1>
+      <p>Transforme sua mente e seu bolso com estratégias 100% orgânicas e reais.</p>
+      <a href="#checkout" class="btn-cta">Quero entrar agora</a>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <h2>Sobre a Mentoria</h2>
+      <p>A Mentoria Plano X foi criada por um jovem anônimo de 16 anos que dominou o digital no sigilo. Agora, ele revela tudo.</p>
+      <ul>
+        <li>Zero tráfego pago</li>
+        <li>Zero enrolação</li>
+        <li>100% estratégia e execução</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="conteudo" class="conteudo">
+    <div class="container">
+      <h2>Você Vai Aprender</h2>
+      <div class="cards">
+        <div class="card">Como escolher o produto ideal</div>
+        <div class="card">Criar estrutura que vende sozinha</div>
+        <div class="card">Gatilhos que realmente funcionam</div>
+        <div class="card">Copy + Criativo que converte</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="feedbacks" class="feedbacks">
+    <div class="container">
+      <h2>Resultados Reais</h2>
+      <br>
+      <div class="feedback-grid">
+        <img src="feedback1.jpeg" alt="Feedback">
+        <img src="feedback2.jpeg" alt="Feedback">
+        <img src="feedback3.jpeg" alt="Feedback">
+      </div>
+    </div>
+  </section>
+
+  <section id="checkout" class="checkout">
+    <div class="container">
+      <h2>Garanta sua vaga</h2>
+      <p class="preco"><span class="de">De R$597,00</span> <span class="por">por R$297,00</span></p>
+      <p class="urgencia">Apenas 7 vagas disponíveis • Acesso vitalício</p>
+      <a href="https://pay.sunize.com.br/zCMCUHQI" class="btn-checkout">Quero minha vaga</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Plano X. Feito no anonimato, entregue com verdade.</p>
+  </footer>
+</body>
+</html>
